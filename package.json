@@ -18,6 +18,7 @@
   "homepage": "https://github.com/annazharova/jewellery#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
-    "gulp-cli": "^2.3.0"
+    "gulp-cli": "^2.3.0",
+    "prettier": "3.2.5"
   }
 }

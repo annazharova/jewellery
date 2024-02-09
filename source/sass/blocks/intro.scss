@@ -1,0 +1,25 @@
+.intro {
+  color: $color-default-white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 463px;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $color-default-beige;
+  background-image: url("../../img/intro.webp"),
+                    url("../../img/intro.png");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/intro@2x.png"),
+                      url("../../img/intro@2x.webp");
+  }
+}
+
+.intro p {
+  font-style: italic;
+  font-size: 38px;
+  margin-top: 5px;
+}

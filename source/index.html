@@ -7,19 +7,33 @@
     <title>Chjewellery</title>
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="preload" href="fonts/poppins-400.woff2" as="font">
+    <link rel="preload" href="fonts/cormorantGaramond-600.woff2" as="font">
   </head>
   <body class="page__body">
     <div class="overlay"></div>
     <header class="header">
       <div class="header__wrapper container">
+        <a href="#">
+          <span class="visually-hidden">Main page</span>
+          <svg class="header__logo" width="66" height="66">
+            <use href="img/svg/logo.svg"></use>
+          </svg>
+        </a>
+        <nav class="user-navigation">
+          <ul class="user-navigation__list">
+            <li class="user-navigation__item">
+              <a class="user-navigation__link" href="#">Search</a>
+            </li>
+            <li class="user-navigation__item">
+              <a class="user-navigation__link" href="#">Login</a>
+            </li>
+            <li class="user-navigation__item">
+              <a class="user-navigation__link" href="#">Cart</a>
+            </li>
+          </ul>
+        </nav>
         <nav class="main-navigation main-navigation--is-close main-navigation--nojs">
           <button class="main-navigation__toggle" type="button" aria-label="Open menu"></button>
-          <a class="main-navigation__logo" href="#">
-            <span class="visually-hidden">Main page</span>
-            <svg class="header__logo" width="66" height="66">
-              <use href="img/svg/logo.svg"></use>
-            </svg>
-          </a>
           <ul class="main-navigation__list">
             <li class="main-navigation__item">
               <a class="main-navigation__link" href="#catalog">What’s new</a>
@@ -36,217 +50,196 @@
             <li class="main-navigation__item">
               <a class="main-navigation__link" href="#">Earrings</a>
             </li>
-            <li class="main-navigation__item">
-              <a class="main-navigation__link" href="#">Cart</a>
-            </li>
-            <li class="main-navigation__item">
-              <a class="main-navigation__link" href="#">Login</a>
-            </li>
-            <li class="main-navigation__item">
-              <a class="main-navigation__link" href="#">Search</a>
-            </li>
           </ul>
         </nav>
       </div>
     </header>
     <main class="page__main">
-      <div class="container intro">
+      <div class="intro">
         <h1>PERFECTION</h1>
         <p>made to be yours</p>
-          <picture>
-            <!-- 1х: 560px; 2x: 1120px -->
-            <source media="(min-width: 1366px)" type="image/webp" srcset="img/intro.webp 1x, img/intro@2x.webp 2x">
-            <!-- 1х: 324px; 2x: 648px -->
-            <source media="(min-width: 768px)" type="image/webp" srcset="img/intro-tablet.webp 1x, img/intro-tablet@2x.webp 2x">
-            <!-- 1х: 290px; 2x: 580px -->
-            <source type="image/webp" srcset="img/intro-mobile.webp 1x, img/intro-mobile@2x.webp 2x">
-            <!-- 1х: 560px; 2x: 1120px -->
-            <source media="(min-width: 1366px)" srcset="img/intro.png 1x, img/intro@2x.png 2x">
-            <!-- 1х: 324px; 2x: 648px -->
-            <source media="(min-width: 768px)" srcset="img/intro-tablet.png 1x, img/intro-tablet@2x.png 2x">
-            <!-- 1х: 290px; 2x: 580px -->
-            <img class="intro__img" src="img/intro-mobile.png" srcset="img/intro-mobile@2x.png 2x" width="1366" height="463" alt="Gold necklaces and rings">
-          </picture>
-        <section class="new">
-          <div class="new__wrapper">
-            <h2>New In</h2>
-            <a class="new__link" href="#catalog">Shop Now</a>
-            <ul class="new__list">
-              <li class="new__item">
-                <a class="new__link" href="#">
-                  <article class="new__card">
-                    <h3>Necklace with amethyst</h3>
-                    <p>$ 145</p>
-                    <picture>
-                      <!-- 1х: 260px; 2x: 520px -->
-                      <source media="(min-width: 1366px)" type="image/webp" srcset="img/catalog/purple-gemstone-necklace.webp 1x, img/catalog/purple-gemstone-necklace@2x.webp 2x">
-                      <!-- 1х: 309px; 2x: 618px -->
-                      <source media="(min-width: 768px)" type="image/webp" srcset="img/catalog/purple-gemstone-necklace-tablet.webp 1x, img/catalog/purple-gemstone-necklace-tablet@2x.webp 2x">
-                      <!-- 1х: 270px; 2x: 540px -->
-                      <source type="image/webp" srcset="img/catalog/purple-gemstone-necklace-mobile.webp 1x, img/catalog/purple-gemstone-necklace-mobile@2x.webp 2x">
-                      <!-- 1х: 260px; 2x: 520px -->
-                      <source media="(min-width: 1366px)" srcset="img/catalog/purple-gemstone-necklace.png 1x, img/catalog/purple-gemstone-necklace@2x.png 2x">
-                      <!-- 1х: 309px; 2x: 618px -->
-                      <source media="(min-width: 768px)" srcset="img/catalog/purple-gemstone-necklace-tablet.png 1x, img/catalog/purple-gemstone-necklace-tablet@2x.png 2x">
-                      <!-- 1х: 270px; 2x: 540px -->
-                      <img class="new__img" src="img/catalog/purple-gemstone-necklace-mobile.png" srcset="img/catalog/purple-gemstone-necklace-mobile@2x.png 2x" width="270" height="284" alt="Silver necklace with amethyst">
-                    </picture>
-                  </article>
-                </a>
-              </li>
-              <li class="new__item">
-                <a class="new__link" href="#">
-                  <article class="new__card">
-                    <h3>Layered сhoker</h3>
-                    <p>$ 115</p>
-                    <picture>
-                      <!-- 1х: 260px; 2x: 520px -->
-                      <source media="(min-width: 1366px)" type="image/webp" srcset="img/catalog/layered-choker-necklace.webp 1x, img/catalog/layered-choker-necklace@2x.webp 2x">
-                      <!-- 1х: 309px; 2x: 618px -->
-                      <source media="(min-width: 768px)" type="image/webp" srcset="img/catalog/layered-choker-necklace-tablet.webp 1x, img/catalog/layered-choker-necklace-tablet@2x.webp 2x">
-                      <!-- 1х: 270px; 2x: 540px -->
-                      <source type="image/webp" srcset="img/catalog/layered-choker-necklace-mobile.webp 1x, img/catalog/layered-choker-necklace-mobile@2x.webp 2x">
-                      <!-- 1х: 260px; 2x: 520px -->
-                      <source media="(min-width: 1366px)" srcset="img/catalog/layered-choker-necklace.png 1x, img/catalog/layered-choker-necklace@2x.png 2x">
-                      <!-- 1х: 309px; 2x: 618px -->
-                      <source media="(min-width: 768px)" srcset="img/catalog/layered-choker-necklace-tablet.png 1x, img/catalog/layered-choker-necklace-tablet@2x.png 2x">
-                      <!-- 1х: 270px; 2x: 540px -->
-                      <img class="new__img" src="img/catalog/layered-choker-necklace-mobile.png" srcset="img/catalog/layered-choker-necklace-mobile@2x.png 2x" width="270" height="284" alt="Layered black сhoker">
-                    </picture>
-                  </article>
-                </a>
-              </li>
-              <li class="new__item">
-                <a class="new__link" href="#">
-                  <article class="new__card">
-                    <h3>Gold chain</h3>
-                    <p>$ 215</p>
-                    <picture>
-                      <!-- 1х: 260px; 2x: 520px -->
-                      <source media="(min-width: 1366px)" type="image/webp" srcset="img/catalog/dainty-gold-necklace.webp 1x, img/catalog/dainty-gold-necklace@2x.webp 2x">
-                      <!-- 1х: 309px; 2x: 618px -->
-                      <source media="(min-width: 768px)" type="image/webp" srcset="img/catalog/dainty-gold-necklace-tablet.webp 1x, img/catalog/dainty-gold-necklace-tablet@2x.webp 2x">
-                      <!-- 1х: 270px; 2x: 540px -->
-                      <source type="image/webp" srcset="img/catalog/dainty-gold-necklace-mobile.webp 1x, img/catalog/dainty-gold-necklace-mobile@2x.webp 2x">
-                      <!-- 1х: 260px; 2x: 520px -->
-                      <source media="(min-width: 1366px)" srcset="img/catalog/dainty-gold-necklace.png 1x, img/catalog/dainty-gold-necklace@2x.png 2x">
-                      <!-- 1х: 309px; 2x: 618px -->
-                      <source media="(min-width: 768px)" srcset="img/catalog/dainty-gold-necklace-tablet.png 1x, img/catalog/dainty-gold-necklace-tablet@2x.png 2x">
-                      <!-- 1х: 270px; 2x: 540px -->
-                      <img class="new__img" src="img/catalog/dainty-gold-necklace-mobile.png" srcset="img/catalog/dainty-gold-necklace-mobile@2x.png 2x" width="270" height="284" alt="Layered gold chain">
-                    </picture>
-                  </article>
-                </a>
-              </li>
-              <li class="new__item">
-                <a class="new__link" href="#">
-                  <article class="new__card">
-                    <h3>Galaxy earrings</h3>
-                    <p>$ 95</p>
-                    <picture>
-                      <!-- 1х: 260px; 2x: 520px -->
-                      <source media="(min-width: 1366px)" type="image/webp" srcset="img/catalog/galaxy-earrings.webp 1x, img/catalog/galaxy-earrings@2x.webp 2x">
-                      <!-- 1х: 309px; 2x: 618px -->
-                      <source media="(min-width: 768px)" type="image/webp" srcset="img/catalog/galaxy-earrings-tablet.webp 1x, img/catalog/galaxy-earrings-tablet@2x.webp 2x">
-                      <!-- 1х: 270px; 2x: 540px -->
-                      <source type="image/webp" srcset="img/catalog/galaxy-earrings-mobile.webp 1x, img/catalog/galaxy-earrings-mobile@2x.webp 2x">
-                      <!-- 1х: 260px; 2x: 520px -->
-                      <source media="(min-width: 1366px)" srcset="img/catalog/galaxy-earrings.png 1x, img/catalog/galaxy-earrings@2x.png 2x">
-                      <!-- 1х: 309px; 2x: 618px -->
-                      <source media="(min-width: 768px)" srcset="img/catalog/galaxy-earrings-tablet.png 1x, img/catalog/galaxy-earrings-tablet@2x.png 2x">
-                      <!-- 1х: 270px; 2x: 540px -->
-                      <img class="new__img" src="img/catalog/galaxy-earrings-mobile.png" srcset="img/catalog/galaxy-earrings-mobile@2x.png 2x" width="270" height="284" alt="Silver earrings with multicolor gem">
-                    </picture>
-                  </article>
-                </a>
-              </li>
-            </ul>
-            <ul class="pagination">
-              <li class="pagination__item">
-                <a class="pagination__link" href="#">1</a>
-              </li>
-              <li class="pagination__item">
-                <a class="pagination__link" href="#">2</a>
-              </li>
-              <li class="pagination__item">
-                <a class="pagination__link" href="#">3</a>
-              </li>
-            </ul>
-          </div>
-        </section>
       </div>
-      <section class="blog">
-        <div class="container">
-          <h2>Blog</h2>
-          <a class="blog__link" href="#">Read All</a>
-          <ul class="blog__list">
-            <li class="blog__item">
-              <article class="blog__article">
-                <h3>How to care for your jewellery</h3>
-                <p>September 30, 2023</p>
-                <a class="blog__link" href="#">Read Article</a>
-                <picture>
-                  <!-- 1х: 260px; 2x: 520px -->
-                  <source media="(min-width: 1366px)" type="image/webp" srcset="img/blog/blog-care.webp 1x, img/blog/blog-care@2x.webp 2x">
-                  <!-- 1х: 309px; 2x: 618px -->
-                  <source media="(min-width: 768px)" type="image/webp" srcset="img/blog/blog-care-tablet.webp 1x, img/blog/blog-care-tablet@2x.webp 2x">
-                  <!-- 1х: 270px; 2x: 540px -->
-                  <source type="image/webp" srcset="img/blog/blog-care-mobile.webp 1x, img/blog/blog-care-mobile@2x.webp 2x">
-                  <!-- 1х: 260px; 2x: 520px -->
-                  <source media="(min-width: 1366px)" srcset="img/blog/blog-care.png 1x, img/blog/blog-care@2x.png 2x">
-                  <!-- 1х: 309px; 2x: 618px -->
-                  <source media="(min-width: 768px)" srcset="img/blog/blog-care-tablet.png 1x, img/blog/blog-care-tablet@2x.png 2x">
-                  <!-- 1х: 270px; 2x: 540px -->
-                  <img class="blog__img" src="img/blog/blog-care-mobile.png" srcset="img/blog/blog-care-mobile@2x.png 2x" width="285" height="300" alt="Gold jewelry">
-                </picture>
-              </article>
+      <section class="new container">
+          <h2>New In</h2>
+          <a class="new__catalog" href="#catalog">Shop Now</a>
+          <ul class="new__list">
+            <li class="new__item">
+              <a class="new__link" href="#">
+                <article class="new__card">
+                  <picture>
+                    <!-- 1х: 260px; 2x: 520px -->
+                    <source media="(min-width: 1366px)" type="image/webp" srcset="img/catalog/purple-gemstone-necklace.webp 1x, img/catalog/purple-gemstone-necklace@2x.webp 2x">
+                    <!-- 1х: 309px; 2x: 618px -->
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/catalog/purple-gemstone-necklace-tablet.webp 1x, img/catalog/purple-gemstone-necklace-tablet@2x.webp 2x">
+                    <!-- 1х: 270px; 2x: 540px -->
+                    <source type="image/webp" srcset="img/catalog/purple-gemstone-necklace-mobile.webp 1x, img/catalog/purple-gemstone-necklace-mobile@2x.webp 2x">
+                    <!-- 1х: 260px; 2x: 520px -->
+                    <source media="(min-width: 1366px)" srcset="img/catalog/purple-gemstone-necklace.png 1x, img/catalog/purple-gemstone-necklace@2x.png 2x">
+                    <!-- 1х: 309px; 2x: 618px -->
+                    <source media="(min-width: 768px)" srcset="img/catalog/purple-gemstone-necklace-tablet.png 1x, img/catalog/purple-gemstone-necklace-tablet@2x.png 2x">
+                    <!-- 1х: 270px; 2x: 540px -->
+                    <img class="new__img" src="img/catalog/purple-gemstone-necklace-mobile.png" srcset="img/catalog/purple-gemstone-necklace-mobile@2x.png 2x" width="270" height="284" alt="Silver necklace with amethyst">
+                  </picture>
+                  <h3>Necklace with amethyst</h3>
+                  <p>$ 145</p>
+                </article>
+              </a>
             </li>
-            <li class="blog__item">
-              <article class="blog__article">
-                <h3>Power of crystals</h3>
-                <p>September 23, 2023</p>
-                <a class="blog__link" href="#">Read Article</a>
-                <picture>
-                  <!-- 1х: 260px; 2x: 520px -->
-                  <source media="(min-width: 1366px)" type="image/webp" srcset="img/blog/blog-power.webp 1x, img/blog/blog-power@2x.webp 2x">
-                  <!-- 1х: 309px; 2x: 618px -->
-                  <source media="(min-width: 768px)" type="image/webp" srcset="img/blog/blog-power-tablet.webp 1x, img/blog/blog-power-tablet@2x.webp 2x">
-                  <!-- 1х: 270px; 2x: 540px -->
-                  <source type="image/webp" srcset="img/blog/blog-power-mobile.webp 1x, img/blog/blog-power-mobile@2x.webp 2x">
-                  <!-- 1х: 260px; 2x: 520px -->
-                  <source media="(min-width: 1366px)" srcset="img/blog/blog-power.png 1x, img/blog/blog-power@2x.png 2x">
-                  <!-- 1х: 309px; 2x: 618px -->
-                  <source media="(min-width: 768px)" srcset="img/blog/blog-power-tablet.png 1x, img/blog/blog-power-tablet@2x.png 2x">
-                  <!-- 1х: 270px; 2x: 540px -->
-                  <img class="blog__img" src="img/blog/blog-power-mobile.png" srcset="img/blog/blog-power-mobile@2x.png 2x" width="285" height="300" alt="Gem jewelry">
-                </picture>
-              </article>
+            <li class="new__item">
+              <a class="new__link" href="#">
+                <article class="new__card">
+                  <picture>
+                    <!-- 1х: 260px; 2x: 520px -->
+                    <source media="(min-width: 1366px)" type="image/webp" srcset="img/catalog/layered-choker-necklace.webp 1x, img/catalog/layered-choker-necklace@2x.webp 2x">
+                    <!-- 1х: 309px; 2x: 618px -->
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/catalog/layered-choker-necklace-tablet.webp 1x, img/catalog/layered-choker-necklace-tablet@2x.webp 2x">
+                    <!-- 1х: 270px; 2x: 540px -->
+                    <source type="image/webp" srcset="img/catalog/layered-choker-necklace-mobile.webp 1x, img/catalog/layered-choker-necklace-mobile@2x.webp 2x">
+                    <!-- 1х: 260px; 2x: 520px -->
+                    <source media="(min-width: 1366px)" srcset="img/catalog/layered-choker-necklace.png 1x, img/catalog/layered-choker-necklace@2x.png 2x">
+                    <!-- 1х: 309px; 2x: 618px -->
+                    <source media="(min-width: 768px)" srcset="img/catalog/layered-choker-necklace-tablet.png 1x, img/catalog/layered-choker-necklace-tablet@2x.png 2x">
+                    <!-- 1х: 270px; 2x: 540px -->
+                    <img class="new__img" src="img/catalog/layered-choker-necklace-mobile.png" srcset="img/catalog/layered-choker-necklace-mobile@2x.png 2x" width="270" height="284" alt="Layered black choker">
+                  </picture>
+                  <h3>Layered choker</h3>
+                  <p>$ 115</p>
+                </article>
+              </a>
             </li>
-            <li class="blog__item">
-              <article class="blog__article">
-                <h3>AW 19 trends</h3>
-                <p>September 16, 2023</p>
-                <a class="blog__link" href="#">Read Article</a>
-                <picture>
-                  <!-- 1х: 260px; 2x: 520px -->
-                  <source media="(min-width: 1366px)" type="image/webp" srcset="img/blog/blog-trends.webp 1x, img/blog/blog-trends@2x.webp 2x">
-                  <!-- 1х: 309px; 2x: 618px -->
-                  <source media="(min-width: 768px)" type="image/webp" srcset="img/blog/blog-trends-tablet.webp 1x, img/blog/blog-trends-tablet@2x.webp 2x">
-                  <!-- 1х: 270px; 2x: 540px -->
-                  <source type="image/webp" srcset="img/blog/blog-trends-mobile.webp 1x, img/blog/blog-trends-mobile@2x.webp 2x">
-                  <!-- 1х: 260px; 2x: 520px -->
-                  <source media="(min-width: 1366px)" srcset="img/blog/blog-trends.png 1x, img/blog/blog-trends@2x.png 2x">
-                  <!-- 1х: 309px; 2x: 618px -->
-                  <source media="(min-width: 768px)" srcset="img/blog/blog-trends-tablet.png 1x, img/blog/blog-trends-tablet@2x.png 2x">
-                  <!-- 1х: 270px; 2x: 540px -->
-                  <img class="blog__img" src="img/blog/blog-trends-mobile.png" srcset="img/blog/blog-trends-mobile@2x.png 2x" width="570" height="630" alt="Trend jewelry">
-                </picture>
-              </article>
+            <li class="new__item">
+              <a class="new__link" href="#">
+                <article class="new__card">
+                  <picture>
+                    <!-- 1х: 260px; 2x: 520px -->
+                    <source media="(min-width: 1366px)" type="image/webp" srcset="img/catalog/dainty-gold-necklace.webp 1x, img/catalog/dainty-gold-necklace@2x.webp 2x">
+                    <!-- 1х: 309px; 2x: 618px -->
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/catalog/dainty-gold-necklace-tablet.webp 1x, img/catalog/dainty-gold-necklace-tablet@2x.webp 2x">
+                    <!-- 1х: 270px; 2x: 540px -->
+                    <source type="image/webp" srcset="img/catalog/dainty-gold-necklace-mobile.webp 1x, img/catalog/dainty-gold-necklace-mobile@2x.webp 2x">
+                    <!-- 1х: 260px; 2x: 520px -->
+                    <source media="(min-width: 1366px)" srcset="img/catalog/dainty-gold-necklace.png 1x, img/catalog/dainty-gold-necklace@2x.png 2x">
+                    <!-- 1х: 309px; 2x: 618px -->
+                    <source media="(min-width: 768px)" srcset="img/catalog/dainty-gold-necklace-tablet.png 1x, img/catalog/dainty-gold-necklace-tablet@2x.png 2x">
+                    <!-- 1х: 270px; 2x: 540px -->
+                    <img class="new__img" src="img/catalog/dainty-gold-necklace-mobile.png" srcset="img/catalog/dainty-gold-necklace-mobile@2x.png 2x" width="270" height="284" alt="Layered gold chain">
+                  </picture>
+                  <h3>Gold chain</h3>
+                  <p>$ 215</p>
+                </article>
+              </a>
+            </li>
+            <li class="new__item">
+              <a class="new__link" href="#">
+                <article class="new__card">
+                  <picture>
+                    <!-- 1х: 260px; 2x: 520px -->
+                    <source media="(min-width: 1366px)" type="image/webp" srcset="img/catalog/galaxy-earrings.webp 1x, img/catalog/galaxy-earrings@2x.webp 2x">
+                    <!-- 1х: 309px; 2x: 618px -->
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/catalog/galaxy-earrings-tablet.webp 1x, img/catalog/galaxy-earrings-tablet@2x.webp 2x">
+                    <!-- 1х: 270px; 2x: 540px -->
+                    <source type="image/webp" srcset="img/catalog/galaxy-earrings-mobile.webp 1x, img/catalog/galaxy-earrings-mobile@2x.webp 2x">
+                    <!-- 1х: 260px; 2x: 520px -->
+                    <source media="(min-width: 1366px)" srcset="img/catalog/galaxy-earrings.png 1x, img/catalog/galaxy-earrings@2x.png 2x">
+                    <!-- 1х: 309px; 2x: 618px -->
+                    <source media="(min-width: 768px)" srcset="img/catalog/galaxy-earrings-tablet.png 1x, img/catalog/galaxy-earrings-tablet@2x.png 2x">
+                    <!-- 1х: 270px; 2x: 540px -->
+                    <img class="new__img" src="img/catalog/galaxy-earrings-mobile.png" srcset="img/catalog/galaxy-earrings-mobile@2x.png 2x" width="270" height="284" alt="Silver earrings with multicolor gem">
+                  </picture>
+                  <h3>Galaxy earrings</h3>
+                  <p>$ 95</p>
+                </article>
+              </a>
             </li>
           </ul>
-        </div>
+          <ol class="pagination">
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">1</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">2</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">3</a>
+            </li>
+          </ol>
       </section>
-      <section class="faq">
+      <section class="blog container">
+        <h2>Blog</h2>
+        <a class="blog__link blog__articles" href="#">Read All</a>
+        <ul class="blog__list">
+          <li class="blog__item">
+            <article class="blog__article blog__article--reverse">
+              <div class="blog__lead">
+                <p>September 30, 2023</p>
+                <h3>How to care for your jewellery</h3>
+                <a class="blog__link" href="#">Read Article</a>
+              </div>
+              <picture>
+                <!-- 1х: 260px; 2x: 520px -->
+                <source media="(min-width: 1366px)" type="image/webp" srcset="img/blog/blog-care.webp 1x, img/blog/blog-care@2x.webp 2x">
+                <!-- 1х: 309px; 2x: 618px -->
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/blog/blog-care-tablet.webp 1x, img/blog/blog-care-tablet@2x.webp 2x">
+                <!-- 1х: 270px; 2x: 540px -->
+                <source type="image/webp" srcset="img/blog/blog-care-mobile.webp 1x, img/blog/blog-care-mobile@2x.webp 2x">
+                <!-- 1х: 260px; 2x: 520px -->
+                <source media="(min-width: 1366px)" srcset="img/blog/blog-care.png 1x, img/blog/blog-care@2x.png 2x">
+                <!-- 1х: 309px; 2x: 618px -->
+                <source media="(min-width: 768px)" srcset="img/blog/blog-care-tablet.png 1x, img/blog/blog-care-tablet@2x.png 2x">
+                <!-- 1х: 270px; 2x: 540px -->
+                <img class="blog__img" src="img/blog/blog-care-mobile.png" srcset="img/blog/blog-care-mobile@2x.png 2x" width="285" height="300" alt="Gold jewelry">
+              </picture>
+            </article>
+          </li>
+          <li class="blog__item">
+            <article class="blog__article">
+              <div class="blog__lead">
+                <p>September 23, 2023</p>
+                <h3>Power of crystals</h3>
+                <a class="blog__link" href="#">Read Article</a>
+              </div>
+              <picture>
+                <!-- 1х: 260px; 2x: 520px -->
+                <source media="(min-width: 1366px)" type="image/webp" srcset="img/blog/blog-power.webp 1x, img/blog/blog-power@2x.webp 2x">
+                <!-- 1х: 309px; 2x: 618px -->
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/blog/blog-power-tablet.webp 1x, img/blog/blog-power-tablet@2x.webp 2x">
+                <!-- 1х: 270px; 2x: 540px -->
+                <source type="image/webp" srcset="img/blog/blog-power-mobile.webp 1x, img/blog/blog-power-mobile@2x.webp 2x">
+                <!-- 1х: 260px; 2x: 520px -->
+                <source media="(min-width: 1366px)" srcset="img/blog/blog-power.png 1x, img/blog/blog-power@2x.png 2x">
+                <!-- 1х: 309px; 2x: 618px -->
+                <source media="(min-width: 768px)" srcset="img/blog/blog-power-tablet.png 1x, img/blog/blog-power-tablet@2x.png 2x">
+                <!-- 1х: 270px; 2x: 540px -->
+                <img class="blog__img" src="img/blog/blog-power-mobile.png" srcset="img/blog/blog-power-mobile@2x.png 2x" width="285" height="300" alt="Gem jewelry">
+              </picture>
+            </article>
+          </li>
+          <li class="blog__item blog__item--wide">
+            <article class="blog__article blog__article--wide">
+              <div class="blog__lead">
+                <p>September 16, 2023</p>
+                <h3>AW 19 trends</h3>
+                <a class="blog__link" href="#">Read Article</a>
+              </div>
+              <picture>
+                <!-- 1х: 260px; 2x: 520px -->
+                <source media="(min-width: 1366px)" type="image/webp" srcset="img/blog/blog-trends.webp 1x, img/blog/blog-trends@2x.webp 2x">
+                <!-- 1х: 309px; 2x: 618px -->
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/blog/blog-trends-tablet.webp 1x, img/blog/blog-trends-tablet@2x.webp 2x">
+                <!-- 1х: 270px; 2x: 540px -->
+                <source type="image/webp" srcset="img/blog/blog-trends-mobile.webp 1x, img/blog/blog-trends-mobile@2x.webp 2x">
+                <!-- 1х: 260px; 2x: 520px -->
+                <source media="(min-width: 1366px)" srcset="img/blog/blog-trends.png 1x, img/blog/blog-trends@2x.png 2x">
+                <!-- 1х: 309px; 2x: 618px -->
+                <source media="(min-width: 768px)" srcset="img/blog/blog-trends-tablet.png 1x, img/blog/blog-trends-tablet@2x.png 2x">
+                <!-- 1х: 270px; 2x: 540px -->
+                <img class="blog__img" src="img/blog/blog-trends-mobile.png" srcset="img/blog/blog-trends-mobile@2x.png 2x" width="570" height="630" alt="Trend jewelry">
+              </picture>
+            </article>
+          </li>
+        </ul>
+      </section>
+      <section class="faq container">
         <h2>Frequently asked questions</h2>
         <ul class="faq__list">
           <li class="faq__item">
@@ -276,131 +269,126 @@
         </ul>
       </section>
       <section class="contacts">
-        <div class="contacts__wrapper">
-          <h2>@Chjewellery</h2>
-          <a class="contacts__link" href="#">Follow Us</a>
-        </div>
-        </section>
-        <section class="gallery">
-          <div class="gallery__wrapper">
-            <h2 class="visually-hidden">Gallery</h2>
-            <ul class="gallery__list">
-              <li class="gallery__item">
-                <picture>
-                  <!-- 1х: 260px; 2x: 520px -->
-                  <source media="(min-width: 1366px)" type="image/webp" srcset="img/gallery/1.webp 1x, img/gallery/1@2x.webp 2x">
-                  <!-- 1х: 309px; 2x: 618px -->
-                  <source media="(min-width: 768px)" type="image/webp" srcset="img/gallery/1-tablet.webp 1x, img/gallery/1-tablet@2x.webp 2x">
-                  <!-- 1х: 270px; 2x: 540px -->
-                  <source type="image/webp" srcset="img/gallery/1-mobile.webp 1x, img/gallery/1-mobile@2x.webp 2x">
-                  <!-- 1х: 260px; 2x: 520px -->
-                  <source media="(min-width: 1366px)" srcset="img/gallery/1.png 1x, img/gallery/1@2x.png 2x">
-                  <!-- 1х: 309px; 2x: 618px -->
-                  <source media="(min-width: 768px)" srcset="img/gallery/1-tablet.png 1x, img/gallery/1-tablet@2x.png 2x">
-                  <!-- 1х: 270px; 2x: 540px -->
-                  <img class="gallery__img" src="img/gallery/1-mobile.png" srcset="img/gallery/1-mobile@2x.png 2x" width="230" height="230" alt="Photo from Instagram">
-                </picture>
-              </li>
-              <li class="gallery__item">
-                <picture>
-                  <!-- 1х: 260px; 2x: 520px -->
-                  <source media="(min-width: 1366px)" type="image/webp" srcset="img/gallery/2.webp 1x, img/gallery/2@2x.webp 2x">
-                  <!-- 1х: 309px; 2x: 618px -->
-                  <source media="(min-width: 768px)" type="image/webp" srcset="img/gallery/2-tablet.webp 1x, img/gallery/2-tablet@2x.webp 2x">
-                  <!-- 1х: 270px; 2x: 540px -->
-                  <source type="image/webp" srcset="img/gallery/2-mobile.webp 1x, img/gallery/2-mobile@2x.webp 2x">
-                  <!-- 1х: 260px; 2x: 520px -->
-                  <source media="(min-width: 1366px)" srcset="img/gallery/2.png 1x, img/gallery/2@2x.png 2x">
-                  <!-- 1х: 309px; 2x: 618px -->
-                  <source media="(min-width: 768px)" srcset="img/gallery/2-tablet.png 1x, img/gallery/2-tablet@2x.png 2x">
-                  <!-- 1х: 270px; 2x: 540px -->
-                  <img class="gallery__img" src="img/gallery/2-mobile.png" srcset="img/gallery/2-mobile@2x.png 2x" width="230" height="150" alt="Photo from Instagram">
-                </picture>
-              </li>
-              <li class="gallery__item">
-                <picture>
-                  <!-- 1х: 260px; 2x: 520px -->
-                  <source media="(min-width: 1366px)" type="image/webp" srcset="img/gallery/3.webp 1x, img/gallery/3@2x.webp 2x">
-                  <!-- 1х: 309px; 2x: 618px -->
-                  <source media="(min-width: 768px)" type="image/webp" srcset="img/gallery/3-tablet.webp 1x, img/gallery/3-tablet@2x.webp 2x">
-                  <!-- 1х: 270px; 2x: 540px -->
-                  <source type="image/webp" srcset="img/gallery/3-mobile.webp 1x, img/gallery/3-mobile@2x.webp 2x">
-                  <!-- 1х: 260px; 2x: 520px -->
-                  <source media="(min-width: 1366px)" srcset="img/gallery/3.png 1x, img/gallery/3@2x.png 2x">
-                  <!-- 1х: 309px; 2x: 618px -->
-                  <source media="(min-width: 768px)" srcset="img/gallery/3-tablet.png 1x, img/gallery/3-tablet@2x.png 2x">
-                  <!-- 1х: 270px; 2x: 540px -->
-                  <img class="gallery__img" src="img/gallery/3-mobile.png" srcset="img/gallery/3-mobile@2x.png 2x" width="399" height="412" alt="Photo from Instagram">
-                </picture>
-              </li>
-              <li class="gallery__item">
-                <picture>
-                  <!-- 1х: 260px; 2x: 520px -->
-                  <source media="(min-width: 1366px)" type="image/webp" srcset="img/gallery/4.webp 1x, img/gallery/4@2x.webp 2x">
-                  <!-- 1х: 309px; 2x: 618px -->
-                  <source media="(min-width: 768px)" type="image/webp" srcset="img/gallery/4-tablet.webp 1x, img/gallery/4-tablet@2x.webp 2x">
-                  <!-- 1х: 270px; 2x: 540px -->
-                  <source type="image/webp" srcset="img/gallery/4-mobile.webp 1x, img/gallery/4-mobile@2x.webp 2x">
-                  <!-- 1х: 260px; 2x: 520px -->
-                  <source media="(min-width: 1366px)" srcset="img/gallery/4.png 1x, img/gallery/4@2x.png 2x">
-                  <!-- 1х: 309px; 2x: 618px -->
-                  <source media="(min-width: 768px)" srcset="img/gallery/4-tablet.png 1x, img/gallery/4-tablet@2x.png 2x">
-                  <!-- 1х: 270px; 2x: 540px -->
-                  <img class="gallery__img" src="img/gallery/4-mobile.png" srcset="img/gallery/4-mobile@2x.png 2x" width="230" height="230" alt="Photo from Instagram">
-                </picture>
-              </li>
-              <li class="gallery__item">
-                <picture>
-                  <!-- 1х: 260px; 2x: 520px -->
-                  <source media="(min-width: 1366px)" type="image/webp" srcset="img/gallery/5.webp 1x, img/gallery/5@2x.webp 2x">
-                  <!-- 1х: 309px; 2x: 618px -->
-                  <source media="(min-width: 768px)" type="image/webp" srcset="img/gallery/5-tablet.webp 1x, img/gallery/5-tablet@2x.webp 2x">
-                  <!-- 1х: 270px; 2x: 540px -->
-                  <source type="image/webp" srcset="img/gallery/5-mobile.webp 1x, img/gallery/5-mobile@2x.webp 2x">
-                  <!-- 1х: 260px; 2x: 520px -->
-                  <source media="(min-width: 1366px)" srcset="img/gallery/5.png 1x, img/gallery/5@2x.png 2x">
-                  <!-- 1х: 309px; 2x: 618px -->
-                  <source media="(min-width: 768px)" srcset="img/gallery/5-tablet.png 1x, img/gallery/5-tablet@2x.png 2x">
-                  <!-- 1х: 270px; 2x: 540px -->
-                  <img class="gallery__img" src="img/gallery/5-mobile.png" srcset="img/gallery/5-mobile@2x.png 2x" width="230" height="150" alt="Photo from Instagram">
-                </picture>
-              </li>
-              <li class="gallery__item">
-                <picture>
-                  <!-- 1х: 260px; 2x: 520px -->
-                  <source media="(min-width: 1366px)" type="image/webp" srcset="img/gallery/6.webp 1x, img/gallery/6@2x.webp 2x">
-                  <!-- 1х: 309px; 2x: 618px -->
-                  <source media="(min-width: 768px)" type="image/webp" srcset="img/gallery/6-tablet.webp 1x, img/gallery/6-tablet@2x.webp 2x">
-                  <!-- 1х: 270px; 2x: 540px -->
-                  <source type="image/webp" srcset="img/gallery/6-mobile.webp 1x, img/gallery/6-mobile@2x.webp 2x">
-                  <!-- 1х: 260px; 2x: 520px -->
-                  <source media="(min-width: 1366px)" srcset="img/gallery/6.png 1x, img/gallery/6@2x.png 2x">
-                  <!-- 1х: 309px; 2x: 618px -->
-                  <source media="(min-width: 768px)" srcset="img/gallery/6-tablet.png 1x, img/gallery/6-tablet@2x.png 2x">
-                  <!-- 1х: 270px; 2x: 540px -->
-                  <img class="gallery__img" src="img/gallery/6-mobile.png" srcset="img/gallery/6-mobile@2x.png 2x" width="230" height="230" alt="Photo from Instagram">
-                </picture>
-              </li>
-              <li class="gallery__item">
-                <picture>
-                  <!-- 1х: 260px; 2x: 520px -->
-                  <source media="(min-width: 1366px)" type="image/webp" srcset="img/gallery/7.webp 1x, img/gallery/7@2x.webp 2x">
-                  <!-- 1х: 309px; 2x: 618px -->
-                  <source media="(min-width: 768px)" type="image/webp" srcset="img/gallery/7-tablet.webp 1x, img/gallery/7-tablet@2x.webp 2x">
-                  <!-- 1х: 270px; 2x: 540px -->
-                  <source type="image/webp" srcset="img/gallery/7-mobile.webp 1x, img/gallery/7-mobile@2x.webp 2x">
-                  <!-- 1х: 260px; 2x: 520px -->
-                  <source media="(min-width: 1366px)" srcset="img/gallery/7.png 1x, img/gallery/7@2x.png 2x">
-                  <!-- 1х: 309px; 2x: 618px -->
-                  <source media="(min-width: 768px)" srcset="img/gallery/7-tablet.png 1x, img/gallery/7-tablet@2x.png 2x">
-                  <!-- 1х: 270px; 2x: 540px -->
-                  <img class="gallery__img" src="img/gallery/7-mobile.png" srcset="img/gallery/7-mobile@2x.png 2x" width="230" height="150" alt="Photo from Instagram">
-                </picture>
-              </li>
-            </ul>
-          </div>
+        <h2>@Chjewellery</h2>
+        <a class="contacts__link" href="#">Follow Us</a>
       </section>
-
+      <section class="gallery container">
+        <h2 class="visually-hidden">Gallery</h2>
+        <ul class="gallery__list">
+          <li class="gallery__item">
+            <picture>
+              <!-- 1х: 260px; 2x: 520px -->
+              <source media="(min-width: 1366px)" type="image/webp" srcset="img/gallery/1.webp 1x, img/gallery/1@2x.webp 2x">
+              <!-- 1х: 309px; 2x: 618px -->
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/gallery/1-tablet.webp 1x, img/gallery/1-tablet@2x.webp 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <source type="image/webp" srcset="img/gallery/1-mobile.webp 1x, img/gallery/1-mobile@2x.webp 2x">
+              <!-- 1х: 260px; 2x: 520px -->
+              <source media="(min-width: 1366px)" srcset="img/gallery/1.png 1x, img/gallery/1@2x.png 2x">
+              <!-- 1х: 309px; 2x: 618px -->
+              <source media="(min-width: 768px)" srcset="img/gallery/1-tablet.png 1x, img/gallery/1-tablet@2x.png 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <img class="gallery__img" src="img/gallery/1-mobile.png" srcset="img/gallery/1-mobile@2x.png 2x" width="230" height="230" alt="Photo from Instagram">
+            </picture>
+          </li>
+          <li class="gallery__item">
+            <picture>
+              <!-- 1х: 260px; 2x: 520px -->
+              <source media="(min-width: 1366px)" type="image/webp" srcset="img/gallery/2.webp 1x, img/gallery/2@2x.webp 2x">
+              <!-- 1х: 309px; 2x: 618px -->
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/gallery/2-tablet.webp 1x, img/gallery/2-tablet@2x.webp 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <source type="image/webp" srcset="img/gallery/2-mobile.webp 1x, img/gallery/2-mobile@2x.webp 2x">
+              <!-- 1х: 260px; 2x: 520px -->
+              <source media="(min-width: 1366px)" srcset="img/gallery/2.png 1x, img/gallery/2@2x.png 2x">
+              <!-- 1х: 309px; 2x: 618px -->
+              <source media="(min-width: 768px)" srcset="img/gallery/2-tablet.png 1x, img/gallery/2-tablet@2x.png 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <img class="gallery__img" src="img/gallery/2-mobile.png" srcset="img/gallery/2-mobile@2x.png 2x" width="230" height="150" alt="Photo from Instagram">
+            </picture>
+          </li>
+          <li class="gallery__item">
+            <picture>
+              <!-- 1х: 260px; 2x: 520px -->
+              <source media="(min-width: 1366px)" type="image/webp" srcset="img/gallery/3.webp 1x, img/gallery/3@2x.webp 2x">
+              <!-- 1х: 309px; 2x: 618px -->
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/gallery/3-tablet.webp 1x, img/gallery/3-tablet@2x.webp 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <source type="image/webp" srcset="img/gallery/3-mobile.webp 1x, img/gallery/3-mobile@2x.webp 2x">
+              <!-- 1х: 260px; 2x: 520px -->
+              <source media="(min-width: 1366px)" srcset="img/gallery/3.png 1x, img/gallery/3@2x.png 2x">
+              <!-- 1х: 309px; 2x: 618px -->
+              <source media="(min-width: 768px)" srcset="img/gallery/3-tablet.png 1x, img/gallery/3-tablet@2x.png 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <img class="gallery__img" src="img/gallery/3-mobile.png" srcset="img/gallery/3-mobile@2x.png 2x" width="399" height="412" alt="Photo from Instagram">
+            </picture>
+          </li>
+          <li class="gallery__item">
+            <picture>
+              <!-- 1х: 260px; 2x: 520px -->
+              <source media="(min-width: 1366px)" type="image/webp" srcset="img/gallery/4.webp 1x, img/gallery/4@2x.webp 2x">
+              <!-- 1х: 309px; 2x: 618px -->
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/gallery/4-tablet.webp 1x, img/gallery/4-tablet@2x.webp 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <source type="image/webp" srcset="img/gallery/4-mobile.webp 1x, img/gallery/4-mobile@2x.webp 2x">
+              <!-- 1х: 260px; 2x: 520px -->
+              <source media="(min-width: 1366px)" srcset="img/gallery/4.png 1x, img/gallery/4@2x.png 2x">
+              <!-- 1х: 309px; 2x: 618px -->
+              <source media="(min-width: 768px)" srcset="img/gallery/4-tablet.png 1x, img/gallery/4-tablet@2x.png 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <img class="gallery__img" src="img/gallery/4-mobile.png" srcset="img/gallery/4-mobile@2x.png 2x" width="230" height="230" alt="Photo from Instagram">
+            </picture>
+          </li>
+          <li class="gallery__item">
+            <picture>
+              <!-- 1х: 260px; 2x: 520px -->
+              <source media="(min-width: 1366px)" type="image/webp" srcset="img/gallery/5.webp 1x, img/gallery/5@2x.webp 2x">
+              <!-- 1х: 309px; 2x: 618px -->
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/gallery/5-tablet.webp 1x, img/gallery/5-tablet@2x.webp 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <source type="image/webp" srcset="img/gallery/5-mobile.webp 1x, img/gallery/5-mobile@2x.webp 2x">
+              <!-- 1х: 260px; 2x: 520px -->
+              <source media="(min-width: 1366px)" srcset="img/gallery/5.png 1x, img/gallery/5@2x.png 2x">
+              <!-- 1х: 309px; 2x: 618px -->
+              <source media="(min-width: 768px)" srcset="img/gallery/5-tablet.png 1x, img/gallery/5-tablet@2x.png 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <img class="gallery__img" src="img/gallery/5-mobile.png" srcset="img/gallery/5-mobile@2x.png 2x" width="230" height="150" alt="Photo from Instagram">
+            </picture>
+          </li>
+          <li class="gallery__item">
+            <picture>
+              <!-- 1х: 260px; 2x: 520px -->
+              <source media="(min-width: 1366px)" type="image/webp" srcset="img/gallery/6.webp 1x, img/gallery/6@2x.webp 2x">
+              <!-- 1х: 309px; 2x: 618px -->
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/gallery/6-tablet.webp 1x, img/gallery/6-tablet@2x.webp 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <source type="image/webp" srcset="img/gallery/6-mobile.webp 1x, img/gallery/6-mobile@2x.webp 2x">
+              <!-- 1х: 260px; 2x: 520px -->
+              <source media="(min-width: 1366px)" srcset="img/gallery/6.png 1x, img/gallery/6@2x.png 2x">
+              <!-- 1х: 309px; 2x: 618px -->
+              <source media="(min-width: 768px)" srcset="img/gallery/6-tablet.png 1x, img/gallery/6-tablet@2x.png 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <img class="gallery__img" src="img/gallery/6-mobile.png" srcset="img/gallery/6-mobile@2x.png 2x" width="230" height="230" alt="Photo from Instagram">
+            </picture>
+          </li>
+          <li class="gallery__item">
+            <picture>
+              <!-- 1х: 260px; 2x: 520px -->
+              <source media="(min-width: 1366px)" type="image/webp" srcset="img/gallery/7.webp 1x, img/gallery/7@2x.webp 2x">
+              <!-- 1х: 309px; 2x: 618px -->
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/gallery/7-tablet.webp 1x, img/gallery/7-tablet@2x.webp 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <source type="image/webp" srcset="img/gallery/7-mobile.webp 1x, img/gallery/7-mobile@2x.webp 2x">
+              <!-- 1х: 260px; 2x: 520px -->
+              <source media="(min-width: 1366px)" srcset="img/gallery/7.png 1x, img/gallery/7@2x.png 2x">
+              <!-- 1х: 309px; 2x: 618px -->
+              <source media="(min-width: 768px)" srcset="img/gallery/7-tablet.png 1x, img/gallery/7-tablet@2x.png 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <img class="gallery__img" src="img/gallery/7-mobile.png" srcset="img/gallery/7-mobile@2x.png 2x" width="230" height="150" alt="Photo from Instagram">
+            </picture>
+          </li>
+        </ul>
+      </section>
     </main>
     <footer class="footer">
       <div class="footer__wrapper container">
@@ -408,8 +396,8 @@
           <p>The good stuff in your inbox</p>
           <p>News and updates from CH. No spam, we promise.</p>
           <label>
-            <span class="visually-hidden">Insert your E-mail</span>
-            <input type="email" name="email" id="email" placeholder="Your E-mail" required>
+          <span class="visually-hidden">Insert your E-mail</span>
+          <input type="email" name="email" id="email" placeholder="Your E-mail" required>
           </label>
           <input class="button" type="submit" value="Sign Up">
         </form>
@@ -447,21 +435,21 @@
             <li class="social__item">
               <a class="social__link" href="#" aria-label="Facebook">
                 <svg class="social__img" width="8" height="15">
-                  <use href="img/sprite/sprite_auto.svg#facebook"></use>
+                  <use href="img/sprite/sprite_auto.svg#fb"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="#" aria-label="Instagram">
                 <svg class="social__img" width="15" height="15">
-                  <use href="img/sprite/sprite_auto.svg#instagram"></use>
+                  <use href="img/sprite/sprite_auto.svg#inst"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="#" aria-label="Pinterest">
                 <svg class="social__img" width="15" height="15">
-                  <use href="img/sprite/sprite_auto.svg#pinterest"></use>
+                  <use href="img/sprite/sprite_auto.svg#pint"></use>
                 </svg>
               </a>
             </li>

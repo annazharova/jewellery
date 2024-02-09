@@ -8,9 +8,10 @@ $color-default-white:               #ffffff;
 $color-default-beige:               #a87b62;
 $color-default-gray:                #9b9997;
 
+$color-bg-beige:                    #f0eae4;
 
 $color-default-hover:               #734831;
-$color-default-active:               #46413b;
+$color-default-active:              #6c6b69;
 
 // ---------------------------------
 
@@ -19,7 +20,7 @@ $fz-default:                        16px;
 
 // у некоторых шрифтов в ios возникают проблемы с символом рубля
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
-$ff-cormorant:                         "Cormorant+Garamond", "Garamond", serif;
+$ff-cormorant:                         "Cormorant Garamond", "Garamond", serif;
 $ff-poppins:                           "Poppins", "Arial", sans-serif;
 
 

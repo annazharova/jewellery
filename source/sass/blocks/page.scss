@@ -1,0 +1,25 @@
+.page__body {
+  display: flex;
+  flex-direction: column;
+}
+
+.page__main {
+  flex: 1 0 auto;
+}
+
+.page h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 58px;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 10px;
+
+  // @media (max-width: $vp-tablet) {
+  // }
+
+  // @media (max-width: $vp-mobile) {
+  // }
+}
+

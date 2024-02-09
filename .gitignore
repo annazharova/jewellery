@@ -1,6 +1,8 @@
 .DS_Store
 .idea
 .vscode
+.prettierignore
+.prettierrc
 *.ai
 *.log
 *.pdf
