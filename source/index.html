@@ -392,15 +392,17 @@
     </main>
     <footer class="footer">
       <div class="footer__wrapper container">
-        <form action="https://echo.htmlacademy.ru/courses" method="post">
-          <p>The good stuff in your inbox</p>
+        <div>
+          <h2>The good stuff in your inbox</h2>
           <p>News and updates from CH. No spam, we promise.</p>
-          <label>
-          <span class="visually-hidden">Insert your E-mail</span>
-          <input type="email" name="email" id="email" placeholder="Your E-mail" required>
-          </label>
-          <input class="button" type="submit" value="Sign Up">
-        </form>
+          <form class="custom-form" action="https://echo.htmlacademy.ru/courses" method="post">
+            <label>
+              <span class="visually-hidden">Insert your E-mail</span>
+              <input class="custom-input" type="email" name="email" id="email" placeholder="Your E-mail" required>
+            </label>
+            <input class="button" type="submit" value="Sign Up">
+          </form>
+        </div>
         <nav class="footer-navigation">
           <ul class="footer-navigation__list">
             <li class="footer-navigation__item">
@@ -436,6 +438,7 @@
               <a class="social__link" href="#" aria-label="Facebook">
                 <svg class="social__img" width="8" height="15">
                   <use href="img/sprite/sprite_auto.svg#fb"></use>
+                  <span class="social__text">Facebook</span>
                 </svg>
               </a>
             </li>
@@ -443,6 +446,7 @@
               <a class="social__link" href="#" aria-label="Instagram">
                 <svg class="social__img" width="15" height="15">
                   <use href="img/sprite/sprite_auto.svg#inst"></use>
+                  <span class="social__text">Instagram</span>
                 </svg>
               </a>
             </li>
@@ -450,6 +454,7 @@
               <a class="social__link" href="#" aria-label="Pinterest">
                 <svg class="social__img" width="15" height="15">
                   <use href="img/sprite/sprite_auto.svg#pint"></use>
+                  <span class="social__text">Pinterest</span>
                 </svg>
               </a>
             </li>
@@ -457,6 +462,7 @@
               <a class="social__link" href="#" aria-label="Twitter">
                 <svg class="social__img" width="15" height="13">
                   <use href="img/sprite/sprite_auto.svg#twitter"></use>
+                  <span class="social__text">Twitter</span>
                 </svg>
               </a>
             </li>

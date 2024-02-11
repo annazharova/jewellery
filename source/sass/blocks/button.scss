@@ -2,23 +2,23 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  margin: 10px 0;
-  width: 210px;
-  height: 40px;
+  // margin: 10px 0;
+  // width: 210px;
+  // height: 40px;
   box-sizing: border-box;
   word-break: break-all;
   white-space: pre-line;
   height: fit-content;
 
-  color: $color-default-black;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 150%;
 
-  background-color: $color-default-white;
+  background-color: transparent;
   border: none;
+  color: $color-default-white;
+  font-family: $ff-poppins;
+  font-size: 16px;
+  line-height: 21px;
   cursor: pointer;
+  font-style: normal;
 
   transition: opacity $trans-default;
 
