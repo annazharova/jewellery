@@ -124,3 +124,20 @@
   border-bottom: solid 1px $color-default-white;
   padding-bottom: 10px;
 }
+
+.custom-form__search {
+  border: none;
+  min-height: 30px;
+  font-family: $ff-poppins;
+  background-image: url("../img/svg/search.svg");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  padding-left: 30px;
+}
+
+.custom-form__submit {
+  border: none;
+  background: transparent;
+  font-family: $ff-poppins;
+  display: none;
+}

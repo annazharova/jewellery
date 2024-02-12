@@ -12,28 +12,31 @@
   <body class="page__body">
     <div class="overlay"></div>
     <header class="header">
-      <div class="header__wrapper container">
-        <a href="#">
-          <span class="visually-hidden">Main page</span>
-          <svg class="header__logo" width="66" height="66">
-            <use href="img/svg/logo.svg"></use>
-          </svg>
-        </a>
-        <nav class="user-navigation">
-          <ul class="user-navigation__list">
-            <li class="user-navigation__item">
-              <a class="user-navigation__link" href="#">Search</a>
-            </li>
-            <li class="user-navigation__item">
-              <a class="user-navigation__link" href="#">Login</a>
-            </li>
-            <li class="user-navigation__item">
-              <a class="user-navigation__link" href="#">Cart</a>
-            </li>
-          </ul>
-        </nav>
+      <nav class="user-navigation container">
+        <ul class="user-navigation__list">
+          <li class="user-navigation__item">
+            <form class="custom-form"> 
+              <input class="custom-form__search" type="text" name="text" placeholder="Type here to search">
+              <input class="custom-form__submit" type="submit" name="submit" value="Search">
+            </form>
+          </li>
+          <li class="user-navigation__item">
+            <a class="user-navigation__link" href="#">Login</a>
+          </li>
+          <li class="user-navigation__item">
+            <a class="user-navigation__link" href="#">Cart <span>0</span></a>
+          </li>
+        </ul>
+      </nav>
         <nav class="main-navigation main-navigation--is-close main-navigation--nojs">
           <button class="main-navigation__toggle" type="button" aria-label="Open menu"></button>
+          <a class="main-navigation__logo" href="#">
+            <span class="visually-hidden">Main page</span>
+            <svg width="66" height="66">
+              <use href="img/sprite/sprite_auto.svg#logo"></use>
+            </svg>
+          </a>
+          <div class="main-navigation__border"></div>
           <ul class="main-navigation__list">
             <li class="main-navigation__item">
               <a class="main-navigation__link" href="#catalog">What’s new</a>
@@ -52,7 +55,6 @@
             </li>
           </ul>
         </nav>
-      </div>
     </header>
     <main class="page__main">
       <div class="intro">
@@ -395,7 +397,7 @@
         <div>
           <h2>The good stuff in your inbox</h2>
           <p>News and updates from CH. No spam, we promise.</p>
-          <form class="custom-form" action="https://echo.htmlacademy.ru/courses" method="post">
+          <form class="custom-form" action="#" method="post">
             <label>
               <span class="visually-hidden">Insert your E-mail</span>
               <input class="custom-input" type="email" name="email" id="email" placeholder="Your E-mail" required>
