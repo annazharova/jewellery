@@ -6,6 +6,7 @@
   font-size: 34px;
   font-weight: 700;
   line-height: 44px;
+  margin-bottom: 0;
 }
 
 .new__catalog {
@@ -24,6 +25,32 @@
   &:active {
     color: $color-default-active;
   }
+}
+
+.new__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.new__button {
+  background-image: url("../img/svg/next.svg");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: center;
+  height: 30px;
+  width: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.new__button:last-child {
+  transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -moz-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
 }
 
 .new__link {

@@ -125,6 +125,14 @@
   padding-bottom: 10px;
 }
 
+.custom-form__button {
+  background-image: url("../img/svg/sign-up-arrow.svg");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: right;
+  padding-right: 45px;
+}
+
 .custom-form__search {
   border: none;
   min-height: 30px;
